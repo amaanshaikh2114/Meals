@@ -46,18 +46,36 @@ class MealDetailsScreen extends ConsumerWidget {
                 ),
               );
             },
-            icon: Icon(isFavourite ? Icons.star : Icons.star_border),
+            // Implicit animation
+            icon: AnimatedSwitcher(
+              // animates when the child widget updates (here fav icon)
+              duration: Duration(milliseconds: 300),
+              transitionBuilder: (child, animation) {
+                return RotationTransition(
+                  // could just write end: 1.0 without <double>
+                  turns: Tween<double>(begin: 0.75, end: 1).animate(animation),
+                  child: child, // Is the below Icon child widget
+                );
+              },
+              child: Icon(
+                isFavourite ? Icons.star : Icons.star_border,
+                key: ValueKey(isFavourite),
+              ),
+            ),
           ),
         ],
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image.network(
-              meal.imageUrl,
-              width: double.infinity,
-              height: 300,
-              fit: BoxFit.cover,
+            Hero(
+              tag: meal.id,
+              child: Image.network(
+                meal.imageUrl,
+                width: double.infinity,
+                height: 300,
+                fit: BoxFit.cover,
+              ),
             ),
             const SizedBox(height: 14),
             Text(
