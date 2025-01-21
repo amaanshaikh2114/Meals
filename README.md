@@ -1,16 +1,6 @@
 # meals
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ - A multiscreen meals app that uses GridView, NetworkImage and various other widgets like InkWell, Navigationbar, Drawer, SwitchTileList etc. 
+ - It does use Riverpod package for cross state widget management. Instead of the function being passed down through various widgets from the parent widget to the actual widget where it is going to be used (cumbersome method), a separate providers.dart file can be created which can provide a particular static/dynamic value(variable) and it's associated methods to modify this value throughout the whole project. Thus passing of values from one widget to another becomes a much easier task when a common provider file handles such common values required in multiple widgets. 
+ - Multiple provider files can be created for multiple such values and the StateNotifier with StateNotifierProvider class can be used for handling dynamic values and making functions for managing the changing state/value of the variables it provides.
+ - The files that want an access to the variables provided by these provider files must use the read() or watch() function. The read() function is only executed once and thus can be used in initState() function or anonymous functions < (){} > used in onPressed and onTap like attributes. While the read() function is executed as many times as the state of the value it provides changes. It also calls the corresponding build() in which it is present to update the UI changes accordingly.  
