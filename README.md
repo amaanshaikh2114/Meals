@@ -1,4 +1,4 @@
-# meals
+# meals2
 
  - A multiscreen meals app that uses GridView, NetworkImage and various other widgets like InkWell, Navigationbar, Drawer, SwitchTileList etc. 
  - It does use Riverpod package for cross state widget management. Instead of the function being passed down through various widgets from the parent widget to the actual widget where it is going to be used (cumbersome method), a separate providers.dart file can be created which can provide a particular static/dynamic value(variable) and it's associated methods to modify this value throughout the whole project. Thus passing of values from one widget to another becomes a much easier task when a common provider file handles such common values required in multiple widgets. 
