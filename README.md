@@ -58,8 +58,11 @@ A simple Flutter project that provides a multi-screen interface to view differen
 ## Screenshots
 <p align="center">
   <img src="screenshots/home_page.png" alt="Home page" width="300"/>
-  <img src="screenshots/.png" alt="" width="300"/>
-  <img src="screenshots/.png" alt="" width="300"/>
+  <img src="screenshots/favourites.png" alt="Favourites" width="300"/>
+  <img src="screenshots/drawer.png" alt="Drawer" width="300"/>
+  <img src="screenshots/filters_page.png" alt="Filters page" width="300"/>
+  <img src="screenshots/meals.png" alt="Category" width="300"/>
+  <img src="screenshots/meal_details.png" alt="Meal description" width="300"/>
 </p>
 
 ## Credits
