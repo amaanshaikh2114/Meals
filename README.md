@@ -56,13 +56,36 @@ A simple Flutter project that provides a multi-screen interface to view differen
    
 
 ## Screenshots
-<p align="center">
-  <img src="screenshots/home_page.png" alt="Home page" width="300"/>
-  <img src="screenshots/favourites.png" alt="Favourites" width="300"/>
-  <img src="screenshots/meals.png" alt="Category" width="300"/>
-  <img src="screenshots/meal_details.png" alt="Meal description" width="300"/>
-  <img src="screenshots/drawer.png" alt="Drawer" width="300"/>
-  <img src="screenshots/filters_page.png" alt="Filters page" width="300"/>
+<p align="center" style="margin: 20px;">
+  <figure>
+    <figcaption align="center">Home page</figcaption>
+    <img src="screenshots/home_page.png" alt="Home page" width="300" style="padding-top: 10px;"/>
+  </figure>
+  
+  <figure>
+    <figcaption align="center">Favourites</figcaption>
+    <img src="screenshots/favourites.png" alt="Favourites" width="300" style="padding-top: 10px;"/>
+  </figure>
+
+  <figure>
+    <figcaption align="center">Category</figcaption>
+    <img src="screenshots/meals.png" alt="Category" width="300" style="padding-top: 10px;"/>
+  </figure>
+
+  <figure>
+    <figcaption align="center">Meal description</figcaption>
+    <img src="screenshots/meal_details.png" alt="Meal description" width="300" style="padding-top: 10px;"/>
+  </figure>
+
+  <figure>
+    <figcaption align="center">Drawer</figcaption>
+    <img src="screenshots/drawer.png" alt="Drawer" width="300" style="padding-top: 10px;"/>
+  </figure>
+
+  <figure>
+    <figcaption align="center">Filters page</figcaption>
+    <img src="screenshots/filters_page.png" alt="Filters page" width="300" style="padding-top: 10px;"/>
+  </figure>
 </p>
 
 ## Credits
